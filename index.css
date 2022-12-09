@@ -1,0 +1,10 @@
+.pseudo p:hover{
+    display: block;
+    text-decoration: none;
+    color: brown;
+}
+.pseudo input:active{
+    display: block;
+    text-decoration: none;
+    color:blue;
+}
