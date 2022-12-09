@@ -8,3 +8,68 @@
     text-decoration: none;
     color:blue;
 }
+.marks{
+    font-family: 'Courier New', Courier, monospace;
+}
+.grid-item{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    border: 3px solid red;
+}
+.col{
+    background-color: rgb(164, 9, 164);
+    margin: 10px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.one{
+    grid-column: 1/3;
+    background-color: chartreuse;
+}
+.for{
+    grid-row: 2/5;
+    background-color: aqua;
+}
+.sev{
+    grid-column: 3/5;
+    background-color: brown;
+}
+
+
+
+.grid-items{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    border: 3px solid rgb(60, 0, 255);
+    grid-template-areas: 
+    " aa1 aa1 aa1 aa4"
+    " aa5 aa6 aa7 aa4"
+    " aa9 aa10 aa11 aa4"
+    " aa13 aa10 aa15 aa16" 
+    "aa17 aa10 aa19 aa20" 
+    ;
+}
+.col-area{
+    background-color: rgb(25, 161, 176);
+    margin: 10px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    border: 2px solid rgb(0, 0, 0);
+}
+.fo{
+    grid-area: aa4;
+    background-color: greenyellow;
+}
+.on{
+    grid-area:aa1;
+background-color: blueviolet;
+
+}
+
+.te{
+    grid-area:aa10;
+    background-color: rgb(228, 18, 186);
+}
+
