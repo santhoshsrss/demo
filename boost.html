@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 12</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <style>
+        .child{
+            display: none;
+            color: red;
+        }
+        .child p:hover{
+            background-color: blue;
+            border: 2px dotted black;
+        } 
+        .parent:hover .child {
+            display: block;
+        }
+        .parent{
+            display: inline-block;
+        }
+        /* @media screen and (max-width:400px){
+            body{
+                color:rgb(16, 228, 19)
+            }
+        } */
+        @media screen and (min-width:700px)and (max-width:900px){
+            body{
+                color:blueviolet
+            }
+        }
+        .container{
+            color: red;
+        }
+        .container-fluid{
+            color: olivedrab;
+        }
+        .container-nav-parent{
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+     <div class ="parent">
+        <h3>Drop Down</h3>
+        <div class="child">
+          <p>Car</p>
+          <p>Bus</p>
+          <p>Bike</p>
+          <p>Lorry</p>       
+        </div>
+    </div>
+    <hr style="background-color: blue; border-width: 5px;">
+    <br>
+    <br>
+    <h3>Media Query</h3>
+<ol>
+    <li>screen</li>
+    <li>print</li>
+    <li>all</li>
+
+</ol>
+<hr>
+<br>
+<picture>
+    <h3>Srcset means it take set of images.</h3>
+    <source srcset="sunset.jpg" width="500px" media="(max-width:600px)">
+    <source srcset="one.jpg" width="500px" media="(min-width:800px) and (max-width:900px)" >
+    <img src="two.jpg" alt="nature" width="500px">
+
+picture> 
+ <hr>
+<br>
+<br>
+<div class="container">
+    <h3>Bootstrap</h3>
+    <p>This container helps to maintain the container in center position.</p>
+    <label for="">New data</label>
+    <div>
+        <ol>
+            <li>car</li>
+            <li>bike</li>
+            <li>bus</li>
+            <li>mech</li>
+            <li>sick</li>
+            <li>logtree</li>
+
+        </ol>
+    </div>
+</div>
+<hr>
+<br>
+
+<div class="container-fluid">
+    <h3>Bootstrap</h3>
+    <p>This container will always take the entire width.</p>
+    <label for="">New data</label>
+    <div>
+        <ol>
+            <li>car</li>
+            <li>bike</li>
+            <li>bus</li>
+            <li>mech</li>
+            <li>sick</li>
+            <li>logtree</li>
+        </ol>
+    </div>
+</div>
+<hr>
+<br>
+<h3> Default Buttons in Bootstarp </h3>
+<br>
+<button type="button" class="btn btn-primary">button</button>
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+
+<br>
+<br>
+<br>
+<div class="dropdown">
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown Botton
+    </a>
+  
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
+  <br>
+  <br>
+  <div class="container-nav-parent">
+  
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="/san.html">1</a></li>
+      <li class="page-item"><a class="page-link" href="/res.html">2</a></li>
+      <li class="page-item"><a class="page-link" href="/index.html">3</a></li>
+      <li class="page-item"><a class="page-link" href="/two.jpg">Next</a></li>
+      
+    </ul>
+  </nav>
+  </div>
+  <br>
+  <br>
+  <hr>
+  <h3>Layout is use to creat form and grid</h3>
+  <form class="row g-3">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" required>
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress2" class="form-label">Address 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">State</label>
+      <select id="inputState" class="form-select">
+        <option selected>Enter</option>
+        <option>villupuram</option>
+        <option>tamil nadu</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check me out
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Sign up</button>
+    </div>
+  </form>
+  <hr>
+</body>
+</html>
