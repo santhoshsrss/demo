@@ -10,27 +10,36 @@
         .domes{
             display: flex;
             justify-content: center;
+            color: yellowgreen;
+        }
+        .newelement{
+            color: cornflowerblue;
         }
         .cooler{
             display:block;
-            background-color: rgb(127, 102, 102);
-            
+            background-color: rgb(221, 248, 176);
+        }
+        .newcol{
+            color: rgb(255, 17, 0);
+        }
+        .valut{
+            color: rgb(242, 68, 97);
         }
     </style>
 </head>
 <body class="cooler">
     <script src="dom.js"></script>
     <h2 class="domes">DOM -> Document Object Module</h2>
-    <h3>DOM</h3>
+    <h3 class="newelement">DOM</h3>
     <ul>
-        <li>It contains all the methods and properties of a website and use to interact with a website.</li>
-        <li>Representation of a website</li>
-        <li>It containlot of method to interact with website</li>
-        <li>All content and methods are used in DOM</li>
+        <li class="newcol">It contains all the methods and properties of a website and use to interact with a website.</li>
+        <li class="newcol">Representation of a website</li>
+        <li class="newcol">It containlot of method to interact with website</li>
+        <li class="newcol">All content and methods are used in DOM</li>
     </ul>
     <br>
     <ul>
-        <li>getElementbyTagName
+        <li class="newelement">getElementbyTagName
         <ol style="color:rgb(10, 179, 49)">
             <br>
             <li>data of that tag</li>
@@ -39,7 +48,7 @@
         </ol>
         </li>
         <br>
-        <li>getElementByClassName
+        <li class="newelement">getElementByClassName
             <ol style="color:rgb(15, 223, 238)">
                 <br>
                 <li>data of that class</li>
@@ -49,7 +58,7 @@
             </li>
         </li>
         <br>
-        <li>getElementById
+        <li class="newelement">getElementById
             <ol style="color:rgb(67, 10, 211)">
                 <br>
                 <li>data of that Id</li>
@@ -59,7 +68,7 @@
             </li>
         </li>
         <br>
-        <li>querySelector
+        <li class="newelement">querySelector
             <ol style="color:rgb(232, 9, 191)">
                 <br>
                 <li>We can use parent child relation</li>
@@ -71,7 +80,7 @@
             </li>
         </li>
         <br>
-        <li>querySelectorAll
+        <li class="newelement">querySelectorAll
             <ol style="color:rgb(242, 88, 22)">
                 <br>
                 <li>We can use parent child relation</li>
@@ -83,7 +92,7 @@
             </li>
         </li>
         <br>
-        <li>To Read Data inside Tag
+        <li class="newelement">To Read Data inside Tag
             <ol style="color:rgb(208, 13, 32)">
                 <br>
                 <li>There are three methods</li><br>
@@ -108,6 +117,29 @@
             </li>
         </li>
 
-    </ul>
+    
+    <li style="color:blueviolet">Class List
+       <ul>
+        <li style="color: coral;">It is only used for class.</li>
+        <br>
+        <li style="color: rgb(7, 161, 38);">Types of class list</li>
+        <br>
+        <ul>    
+            <li class="valut">Add - Used to add the data in a class.</li>
+            <li class="valut">Remove - used to remove the data in a class.</li>
+            <li class="valut">Contains - used to sheck the data is in that class.</li>
+            <li class="valut">Toggle - used to add the data if it is not in the class and also used to remove the add if it is in the class.</li>
+        </ul>   
+    </li>
+</ul>
+<br>
+<br>
+<div>
+<button onclick="clicked()">Button</Button></button>
+</div>
+
+
+
 </body>
+<script src="dom.js"></script>
 </html>
